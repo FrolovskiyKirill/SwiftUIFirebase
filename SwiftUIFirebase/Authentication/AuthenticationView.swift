@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct AuthenticationView: View {
+    
+    @Binding var showSignInView: Bool
+    
     var body: some View {
         
         VStack {
             
             NavigationLink {
-                SignInEmailView()
+                SignInEmailView(showSignView: $showSignInView)
             } label: {
                 Text("Sing In with Email")
                     .font(.headline)
@@ -34,7 +37,7 @@ struct AuthenticationView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
             
-            AuthenticationView()
+            AuthenticationView(showSignInView: .constant(false))
         }
     }
 }
