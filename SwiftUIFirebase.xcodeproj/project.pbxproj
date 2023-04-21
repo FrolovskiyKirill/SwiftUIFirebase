@@ -15,6 +15,7 @@
 		ED3A745229C0E965009383F0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = ED3A745129C0E965009383F0 /* FirebaseAnalytics */; };
 		ED3A745429C0E965009383F0 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ED3A745329C0E965009383F0 /* FirebaseAnalyticsSwift */; };
 		ED3A745729C24375009383F0 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = ED3A745629C24375009383F0 /* FirebaseAuth */; };
+		ED6CA93929F2E696001CA06C /* Utilites.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6CA93829F2E696001CA06C /* Utilites.swift */; };
 		EDC4F99B29C5C7BB0045C41B /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC4F99A29C5C7BB0045C41B /* AuthenticationView.swift */; };
 		EDC4F99D29C5CA120045C41B /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC4F99C29C5CA120045C41B /* SignInEmailView.swift */; };
 		EDC4F99F29C5CDCE0045C41B /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC4F99E29C5CDCE0045C41B /* AuthenticationManager.swift */; };
@@ -31,6 +32,8 @@
 		ED3A744429C0E45F009383F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED3A744729C0E45F009383F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ED3A744E29C0E728009383F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ED6CA93629F2E1EC001CA06C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		ED6CA93829F2E696001CA06C /* Utilites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilites.swift; sourceTree = "<group>"; };
 		EDC4F99A29C5C7BB0045C41B /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		EDC4F99C29C5CA120045C41B /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
 		EDC4F99E29C5CDCE0045C41B /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
@@ -74,8 +77,10 @@
 		ED3A743F29C0E45D009383F0 /* SwiftUIFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				ED6CA93629F2E1EC001CA06C /* Info.plist */,
 				ED3A744029C0E45D009383F0 /* SwiftUIFirebaseApp.swift */,
 				ED3A744229C0E45D009383F0 /* ContentView.swift */,
+				ED6CA93729F2E66B001CA06C /* Utilites */,
 				EDC4F99929C5C7860045C41B /* Authentication */,
 				ED3A744E29C0E728009383F0 /* GoogleService-Info.plist */,
 				ED3A744429C0E45F009383F0 /* Assets.xcassets */,
@@ -97,6 +102,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED6CA93729F2E66B001CA06C /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				ED6CA93829F2E696001CA06C /* Utilites.swift */,
+			);
+			path = Utilites;
 			sourceTree = "<group>";
 		};
 		EDC4F99929C5C7860045C41B /* Authentication */ = {
@@ -197,6 +210,7 @@
 				ED3A744329C0E45D009383F0 /* ContentView.swift in Sources */,
 				ED3A744129C0E45D009383F0 /* SwiftUIFirebaseApp.swift in Sources */,
 				EDC4F9A129C5D98A0045C41B /* RootView.swift in Sources */,
+				ED6CA93929F2E696001CA06C /* Utilites.swift in Sources */,
 				EDC4F99F29C5CDCE0045C41B /* AuthenticationManager.swift in Sources */,
 				EDC4F99B29C5C7BB0045C41B /* AuthenticationView.swift in Sources */,
 				EDC4F99D29C5CA120045C41B /* SignInEmailView.swift in Sources */,
@@ -331,6 +345,7 @@
 				DEVELOPMENT_TEAM = WUPLHJKG9Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIFirebase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -360,6 +375,7 @@
 				DEVELOPMENT_TEAM = WUPLHJKG9Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIFirebase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
